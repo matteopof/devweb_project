@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 800px;
+
+}
+
+.voteGraph {
+    display: flex;
+    align-items: flex-end;
+}
+
+.emojiGraph {
+    margin-left:10px;
+    margin-top:10px;
+    display: flex;
+    align-items: flex-end;
+}
+.emoji {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    width:35px;
+    margin-left: 10px;
+}
+.bar{
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    
+    border: outset  #ac7241 ;
+}
+/*
+.kiss {
+    /*height: 50px;
+}*/
+
+.emojiKiss {
+    margin:0;
+    filter: invert(43%) sepia(53%) saturate(469%) hue-rotate(346deg) brightness(101%) contrast(90%);
+}
+.emojiHappy {
+    filter: invert(43%) sepia(53%) saturate(469%) hue-rotate(346deg) brightness(101%) contrast(90%);
+}
+.emojiOk {
+    margin: 50;
+    filter: invert(43%) sepia(53%) saturate(469%) hue-rotate(346deg) brightness(101%) contrast(90%);
+}
+.emojiBad {
+    margin-left: 10;
+    filter: invert(43%) sepia(53%) saturate(469%) hue-rotate(346deg) brightness(101%) contrast(90%);
+}
+.emojiPuke {
+    margin-left: 10;
+    filter: invert(43%) sepia(53%) saturate(469%) hue-rotate(346deg) brightness(101%) contrast(90%);
+}
+
+/*
+.happy {
+    height: 80px;
+}
+.ok {
+    height: 120px;
+}
+.bad {
+    height: 180px;
+}
+*/
+/*
+.puke {
+    height: 200px;
+}*/
