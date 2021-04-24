@@ -25,7 +25,7 @@
 // export default App;
 
 import './App.css';
-import { Tchat } from './ComponentTchat/index';
+import { Tchat } from './components/tchat/index';
 function App() {
   return (
     <div>
