@@ -5,9 +5,69 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(235, 235, 235);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/************* Flex ************/
+.row{
+  display: flex; 
+  flex-direction: row;
+}
+
+.column{
+  display : flex;
+  flex-direction: column;
+}
+
+.row-centered{ align-items: center; }
+
+.column-centered{ justify-content: center; }
+
+
+/************* Text ************/
+
+.bold{ font-weight: bold; }
+
+.upperCase{ text-transform: uppercase; }
+
+.text-center{ text-align: center }
+
+/************* Margins ************/
+
+.ml-1{ margin-left: 0.5rem; }
+
+.ml-2{ margin-left: 1rem; }
+
+.ml-3{ margin-left: 2rem; }
+
+.mr-1{ margin-right: 0.5rem; }
+
+.mr-2{ margin-right: 1rem; }
+
+.mr-3{ margin-right: 2rem; }
+
+.mt-0{ margin-top: 0; }
+
+.mt-1{ margin-top: 0.5rem; }
+
+.mt-2{ margin-top: 1rem; }
+
+.mt-3{ margin-top: 2rem; }
+
+/************* Size ************/
+.w-20{ max-width: 20vw; }
+
+.w-30{ max-width: 30vw; }
+
+/************* Container ************/
+.container{
+  border-radius: 15px; 
+  border: white solid 5px;
+  background-color: #ffbd3a7a;
+  padding: 2rem;
 }
