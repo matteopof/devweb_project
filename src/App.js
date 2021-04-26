@@ -26,11 +26,12 @@
 
 import './App.css';
 import { Tchat } from './components/tchat/index';
+import { VoteZone } from './components/vote';
 function App() {
   return (
-    <div>
-      <Tchat />
-    </div>
+    <>
+      <VoteZone />
+    </>
   );
 }
 
