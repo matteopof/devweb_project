@@ -25,8 +25,10 @@
 // export default App;
 
 import './App.css';
+import './components/vote/vote.css';
 import { Tchat } from './components/tchat/index';
 import { VoteZone } from './components/vote';
+
 function App() {
   return (
     <>

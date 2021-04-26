@@ -31,18 +31,18 @@ export class VoteZone extends React.Component {
   render() {
     return (
       <>
-        <h2>Choord Chooser 2000</h2>
         <div className="container">
+        <h2>Choord Chooser 2000</h2>
           {
             this.state.choords.map((option, i) => 
               <div key={i} className="voteOption">
-                <div className="voteCount">
-                  {option.votes}
-                </div>
                 <div className="chordName">
                   {option.name}
                 </div>
-                <button onClick={this.voteFor.bind(this, i)}>Vote !</button>
+                <div className="voteCount">
+                  {option.votes}
+                </div>
+                <button onClick={this.voteFor.bind(this, i)}>+1</button>
               </div>
             )
           }
