@@ -1,65 +1,51 @@
-// import React, { useState }  from 'react';
+import React, { useEffect, useState }  from 'react';
+import tchat from './tchat.json';
 
-// export const Tchat = (props) => {
-//     const comments = useState(props.comments);
-
-//     return(
-//         <div id="tchatComponent" className="container w-20">
-//             <h2 class='upperCase mt-0 text-center'>Le Cha-Cha-Chat</h2>
-//             <div id='commentsSection'>
-//                 {comments.map((comment) => comment)}
-//             </div>
-//         </div>
-//     )
-// };
-
-import React, { useState }  from 'react';
-
-class Comment extends React.Component {
+class Comment extends React.Component { //Un Comment est composé d'un pseudo et d'un contenu
     render() {
         return React.createElement(
             "div",
-            {class: 'row mt-1'},
-            React.createElement("div", {class: 'bold'}, this.props.pseudo),
-            React.createElement("div", {class: 'ml-2'}, this.props.content),
+            {className: 'row mt-1'},
+            React.createElement("div", {className: 'bold'}, this.props.pseudo),
+            React.createElement("div", {className: 'ml-2'}, this.props.content),
         );
     }
 }
 
 export const Tchat = () => {
-    const [pseudo, setPseudo] = useState('Test');    
-    const [content, setContent] = useState('Test');
+    const allComments = tchat.map((comment) => [
+        React.createElement(
+            Comment, 
+            { pseudo: comment["pseudo"], content: comment["comment"] }, 
+            null)
+        ]); //allComments contient TOUS les commentaires du fichier "tchat.json", mis sous la forme de l'objet Comment
+        //COMMENTAIRE À SUPPR PLUS TARD : pour les autres components, travaillez directement sur le tableau tchat 
+
     const [comments, setComments] = useState([]);
-    const [errorMessage, setErrorMessage] = useState('');
-    const maxComments = 9;
 
-    const handleInput = (event, setter) => {setter(event.target.value);};
+    const [time, setTime] = useState(0);
+    useEffect(() => {
+        const timer = setInterval(() => {        
+        if(time < tchat.length){
+            //Les commentaires stockés dans commentsArray s'ajoutent un à un au tableau comments : 
+            setTime(time + 1);
 
-    const handleComments = (pseudo, content) => {
-        if(!pseudo || !content) {
-            setErrorMessage('Your comment is incomplete');
-        }
-        else{
-            const newComment = comments.concat(React.createElement(Comment, { pseudo: pseudo, content: content }, null)); 
-            setComments(newComment);
-            setErrorMessage('');
-        }
-    }
+            //COMMENTAIRE À SUPPR PLUS TARD : pour les autres components, à la place de cette ligne vous faites vos traitements à vous : 
+            setComments(comments.concat(allComments[time])); 
+        }        
+        }, 2000);
+        return () => clearInterval(timer);
+    });   
 
     return(
-
         <>
-            <div id="tchatComponent" className="container w-20">
-                <h2 class='upperCase mt-0 text-center'>Le Cha-Cha-Chat</h2>
-                <div id='commentsSection'>
-                    {comments.map((comment) => comment)}
-                </div>
-            </div>
-            <div id='userTchat'>
-                <input type="text" onChange={ (e) => handleInput(e, setPseudo) } placeholder ="Pseudo" value={pseudo}></input>
-                <input type="text" onChange={ (e) => handleInput(e, setContent)} placeholder ="Type your comment here" value={content}></input>
-                <button onClick={() => handleComments(pseudo, content)}>Submit</button>
-                <div id="error">{errorMessage}</div>
+            <div id="tchatComponent" className="container column">
+                <h2 className='upperCase mt-0 text-center'>Le Cha-Cha-Chat</h2>
+                <div className="wrapper">
+                    <div id='commentsSection' className="mb-2">
+                        {comments.map((comment) => comment)}
+                    </div>
+                </div>                
             </div>
         </>
     )
