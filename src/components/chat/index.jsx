@@ -1,32 +1,32 @@
 import React, { useEffect, useState }  from 'react';
-import tchat from './tchat.json';
+import chat from './chat.json';
 
 class Comment extends React.Component { //Un Comment est composé d'un pseudo et d'un contenu
     render() {
         return React.createElement(
             "div",
-            {className: 'row mt-1'},
-            React.createElement("div", {className: 'bold'}, this.props.pseudo),
-            React.createElement("div", {className: 'ml-2'}, this.props.content),
+            {className: 'mt-1'},
+            React.createElement("span", {className: 'bold'}, this.props.pseudo + ' : '),
+            this.props.content,
         );
     }
 }
 
-export const Tchat = () => {
-    const allComments = tchat.map((comment) => [
+export const Chat = () => {
+    const allComments = chat.map((comment) => [
         React.createElement(
             Comment, 
             { pseudo: comment["pseudo"], content: comment["comment"] }, 
             null)
-        ]); //allComments contient TOUS les commentaires du fichier "tchat.json", mis sous la forme de l'objet Comment
-        //COMMENTAIRE À SUPPR PLUS TARD : pour les autres components, travaillez directement sur le tableau tchat 
+        ]); //allComments contient TOUS les commentaires du fichier "chat.json", mis sous la forme de l'objet Comment
+        //COMMENTAIRE À SUPPR PLUS TARD : pour les autres components, travaillez directement sur le tableau chat 
 
     const [comments, setComments] = useState([]);
 
     const [time, setTime] = useState(0);
     useEffect(() => {
         const timer = setInterval(() => {        
-        if(time < tchat.length){
+        if(time < chat.length){
             //Les commentaires stockés dans commentsArray s'ajoutent un à un au tableau comments : 
             setTime(time + 1);
 

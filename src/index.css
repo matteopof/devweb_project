@@ -71,21 +71,3 @@ code {
   background-color: #ffbd3a7a;
   padding: 2rem;
 }
-
-/************* Components ************/
-#tchatComponent{
-  width: 400px;
-  height: 300px;
-  /* position: relative; */
-}
-
-.wrapper{
-  height:100%;
-  position: relative;
-  overflow: hidden;
-}
-
-#commentsSection{
-  position: absolute;
-  bottom: 0; 
-}
