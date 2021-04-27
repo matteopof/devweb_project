@@ -1,0 +1,17 @@
+/************* Chat components ************/
+#tchatComponent{
+  width: 250px;
+  height: 300px;
+  /* position: relative; */
+}
+
+.wrapper{
+  height:100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#commentsSection{
+  position: absolute;
+  bottom: 0; 
+}

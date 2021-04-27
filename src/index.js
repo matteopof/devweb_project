@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './components/chat/chat.css';
 import App from './App';
+import { Chat } from './components/chat/index';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
+const Routing = () => {
+  return(
+    <Router>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/chat" component={Chat} />
+      </Switch>
+    </Router>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Routing />
   </React.StrictMode>,
   document.getElementById('root')
 );
