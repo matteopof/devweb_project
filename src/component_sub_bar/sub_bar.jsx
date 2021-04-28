@@ -42,7 +42,7 @@ const renderSong = (titleId) => {
 //{artiste: "Oasis", song: "Wonderwall"} , {artiste: "Diams", song: "La boulette"} 
 export const SubBar = (props) => {
     return (
-    <div className="component bar">
+    <div className="container bar">
         <div className="sub_component">
             {renderSong(1)}
         </div>

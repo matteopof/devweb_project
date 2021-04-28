@@ -2,9 +2,6 @@
     background: rgba(255, 188, 58, 0.5);
     border: 3px solid #FFFFFF;
     box-sizing: border-box;
-    backdrop-filter: blur(25px);
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
