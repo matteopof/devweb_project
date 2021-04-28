@@ -19,6 +19,10 @@ code {
   flex-direction: row;
 }
 
+.spacearound{
+  justify-content: space-around;
+}
+
 .column{
   display : flex;
   flex-direction: column;
