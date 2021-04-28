@@ -2,10 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './components/chat/chat.css';
+import './components/component_sub_bar/sub_bar.css';
+
 import App from './App';
 import { Chat } from './components/chat/index';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { SubBar } from './components/component_sub_bar/sub_bar';
 
 const Routing = () => {
   return(
@@ -13,6 +16,7 @@ const Routing = () => {
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/chat" component={Chat} />
+        <Route path="/subbar" component={SubBar} />
       </Switch>
     </Router>
   )
