@@ -31,7 +31,7 @@ export const Chat = () => {
             setTime(time + 1);
 
             //COMMENTAIRE À SUPPR PLUS TARD : pour les autres components, à la place de cette ligne vous faites vos traitements à vous : 
-            setComments(comments.concat(allComments[time])); 
+            setComments(comments.concat(allComments[time])); //if chat[time]["sub"] { }
         }        
         }, 2000);
         return () => clearInterval(timer);

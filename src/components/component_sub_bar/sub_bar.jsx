@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState }  from 'react';
+import chat from '../chat/chat.json';
 
 const songs = [
     {id: 1, artist: "Oasis", song: "Wonderwall"} 
@@ -39,20 +40,75 @@ const renderSong = (titleId) => {
     )
 }
 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 //{artiste: "Oasis", song: "Wonderwall"} , {artiste: "Diams", song: "La boulette"} 
 export const SubBar = (props) => {
+    const [followers, setFollow] = useState(0)
+    const [subscribers, setSub] = useState(0)
+    const [musicId, setMusic] = useState(1)
+
+    const follow = () => {
+        let number = followers + getRandomInt(-2,5)
+        if(number>=0) setFollow(number)
+    }
+
+    const subscribe = () => {
+        if(subscribers < subGoal) setSub(subscribers + 1)
+    }
+
+    const unsubscribe = () => {
+        if(subscribers>0) setSub(subscribers - 1)
+    }
+
+    const [time, setTime] = useState(0);
+    useEffect(() => {
+        const timer = setInterval(() => {        
+        if(time < chat.length){
+            setTime(time + 1);
+
+            if(chat[time]["sub"]) { 
+                subscribe();
+            }
+            // Decremente dans tous les cas
+            // if(!chat[time]["sub"]){
+            //     unsubscribe();
+            // }
+        }        
+        }, 2000);
+        return () => clearInterval(timer);
+    });
+
+    useEffect(() => {
+        const randomTimer = setInterval(() => {  
+            follow();    
+        }, getRandomInt(1000,2000));
+        return () => clearInterval(randomTimer);
+    });
+
+    useEffect(() => {
+        const randomTimer2 = setInterval(() => {  
+            setMusic(getRandomInt(1,songs.length-1));
+        }, getRandomInt(1000,7000));
+        return () => clearInterval(randomTimer2);
+    });
+
     return (
-    <div className="container bar">
+    <div className="container row bar spacearound">
         <div className="sub_component">
-            {renderSong(1)}
+            {renderSong(musicId)}
         </div>
         <div className="sub_component">
-            <p><strong>Followers </strong>{props.followers}</p>
+            <p><strong>Followers </strong>{followers}</p>
         </div>
         <div className="sub_component">
-            <div><p><strong>Subgoal </strong>{props.subscribers}/{subGoal}</p></div>
+            <div><p><strong>Subgoal </strong>{subscribers}/{subGoal}</p></div>
             <div className="fixed_bar" style={{width : subGoal}}>
-                <div className="moving_bar" style={{ width : ((subGoal)/subGoal)*props.subscribers}}></div>
+                <div className="moving_bar" style={{ width : ((subGoal)/subGoal)*subscribers}}></div>
             </div>
         </div>
     </div>
