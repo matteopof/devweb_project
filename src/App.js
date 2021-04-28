@@ -1,12 +1,12 @@
 import './App.css';
-//import './component_sub_bar/sub_bar.css';
-import { SubBar } from './component_sub_bar/sub_bar';
+import './component_sub_bar/sub_bar.css';
+import { SubBarInterface } from './component_sub_bar/index';
 
 
 function App() {
   return (
     <div>
-      <SubBar />
+      <SubBarInterface />
     </div>
   );
 }

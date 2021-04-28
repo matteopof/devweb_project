@@ -1,28 +1,62 @@
-import React, { useState }  from 'react';
+import React from 'react';
 
 const songs = [
-    {id: 1, song: "Oasis Wonderwall"} , {id: 2, song: "Diams La boulette"} 
+    {id: 1, artist: "Oasis", song: "Wonderwall"} 
+    , {id: 2, artist: "The Rolling Stones", song: "Miss You"} 
+    , {id: 3, artist: "The Cure", song: "Just Like Heaven"} 
+    , {id: 4, artist: "U2", song: "One"} 
+    , {id: 5, artist: "Bob Marley", song: "No Woman, No Cry"} 
+    , {id: 6, artist: "The Beatles", song: "Help!"} 
+    , {id: 7, artist: "The Who", song: "Baba O’Riley"} 
+    , {id: 8, artist: "The Ronettes", song: "Be My Baby"} 
+    , {id: 9, artist: "Elvis Presley", song: "Hound Dog"} 
+    , {id: 10, artist: "The Kinks", song: "You Really Got Me"} 
+    , {id: 11, artist: "The Clash", song: "London Calling"} 
+    , {id: 12, artist: "Louis Armstrong", song: "What A Wonderful World"} 
+    , {id: 13, artist: "Simon & Garfunkel", song: "The Sound Of Silence"} 
+    , {id: 14, artist: "The Doors", song: "Light My Fire"} 
+    , {id: 15, artist: "Ray Charles", song: "What’d I Say"} 
+    , {id: 16, artist: "Aretha Franklin", song: "Respect"} 
+    , {id: 17, artist: "Marvin Gaye", song: "What’s Going On"} 
+    , {id: 18, artist: "Led Zeppelin", song: "Stairway To Heaven"} 
+    , {id: 19, artist: "Bob Dylan", song: "Like A Rolling Stone’"} 
+    , {id: 20, artist: "The Beach Boys", song: "God Only Knows"} 
+    , {id: 21, artist: "Diams", song: "La boulette"} 
+    , {id: 22, artist: "Chuck Berry", song: "Johnny B. Goode"} 
+    , {id: 23, artist: "Nirvana", song: "Smells Like Teen Spirit"} 
+    , {id: 24, artist: "The Beach Boys", song: "Good Vibrations"} 
+    , {id: 25, artist: "John Lennon", song: "Imagine"} 
 ];
-//{artiste: "Oasis", song: "Wonderwall"} , {artiste: "Diams", song: "La boulette"} 
-export const SubBar = () => {
+
+const subGoal = 40;
+
+export default subGoal
+
+
+const renderSong = (titleId) => {
     return (
-    <div className="component">
+        <p><strong>{songs.find(song => song.id === titleId).artist}</strong> {songs.find(song => song.id === titleId).song}</p>
+    )
+}
+
+//{artiste: "Oasis", song: "Wonderwall"} , {artiste: "Diams", song: "La boulette"} 
+export const SubBar = (props) => {
+    return (
+    <div className="component bar">
         <div className="sub_component">
-            <p>
-                {Object.keys(id).map()}
-            </p>
+            {renderSong(1)}
         </div>
         <div className="sub_component">
-            <p><strong>SUB</strong>{}</p>
+            <p><strong>Followers </strong>{props.followers}</p>
         </div>
         <div className="sub_component">
-            <p><strong>SUBGOAL</strong>{}</p>
-            <div className="fixed bar" style={{width : 10 }}>
-                <div className="moving bar" style={{width : 5 }}></div>
+            <div><p><strong>Subgoal </strong>{props.subscribers}/{subGoal}</p></div>
+            <div className="fixed_bar" style={{width : subGoal}}>
+                <div className="moving_bar" style={{ width : ((subGoal)/subGoal)*props.subscribers}}></div>
             </div>
         </div>
-        
     </div>
+    
     )
 
 };

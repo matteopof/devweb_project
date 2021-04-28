@@ -1,0 +1,60 @@
+.component {
+    background: rgba(255, 188, 58, 0.5);
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bar {
+    width: 1056px;
+}
+
+.sub_component {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed_bar{
+    width: 100px;
+    height:10px;
+    margin-left: 10px;
+    border: #FFFFFF 1px solid ;
+    border-radius: 20px;
+    padding:0px;
+}
+
+.moving_bar{
+    background-color: #ffffff;
+    border-radius: 200px;
+    width: 40px;
+    height:10px;
+    margin: 0px;
+}
+
+.voteGraph {
+    display: flex;
+    align-items: flex-end;
+}
+
+.emojiGraph {
+    margin-left:10px;
+    margin-top:10px;
+    display: flex;
+    align-items: flex-end;
+}
+.emoji {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    width:35px;
+    margin-left: 10px;
+}
+
