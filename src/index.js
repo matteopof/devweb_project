@@ -9,7 +9,7 @@ import App from './App';
 import { Chat } from './components/chat/index';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import { SubBar } from './components/component_sub_bar/sub_bar';
+import { SubBar } from './components/component_sub_bar/index';
 import { Vote } from './components/reactions/index';
 
 const Routing = () => {

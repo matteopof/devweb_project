@@ -1,5 +1,7 @@
-.bar {
+.subbar {
     width: 1056px;
+    height: 30px;
+    border-radius: 50px;
 }
 
 .sub_component {
