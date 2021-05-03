@@ -52,6 +52,7 @@ export const SubBar = (props) => {
     const [followers, setFollow] = useState(0)
     const [subscribers, setSub] = useState(0)
     const [musicId, setMusic] = useState(1)
+    const [time, setTime] = useState(0);
 
     const follow = () => {
         let number = followers + getRandomInt(-2,5)
@@ -66,35 +67,35 @@ export const SubBar = (props) => {
         if(subscribers>0) setSub(subscribers - 1)
     }
 
-    const [time, setTime] = useState(0);
+    
+    const increment = 0.5;
+    const musictiming = 10;
+    
     useEffect(() => {
         const timer = setInterval(() => {        
         if(time < chat.length){
-            setTime(time + 1);
-
-            if(chat[time]["sub"]) { 
-                subscribe();
+            
+            setTime(time + increment);
+            if( Number.isInteger(time)){
+              
+                console.log(chat[time]);
+                if(chat[time]["sub"]) { 
+                    subscribe();
+                }
+                else if(chat[time]["sub"] === false){
+                    unsubscribe();
+                }  
             }
-            else if(chat[time]["sub"] === false){
-                unsubscribe();
-            } 
+
+            follow();
+            
+            if(time%musictiming==0){
+                setMusic(getRandomInt(1,songs.length-1));
+            }
+            
         }       
-        }, 2000);
+        }, 900);
         return () => clearInterval(timer);
-    });
-
-    useEffect(() => {
-        const randomTimer = setInterval(() => {  
-            follow();    
-        }, getRandomInt(1000,2000));
-        return () => clearInterval(randomTimer);
-    });
-
-    useEffect(() => {
-        const randomTimer2 = setInterval(() => {  
-            setMusic(getRandomInt(1,songs.length-1));
-        }, getRandomInt(1000,7000));
-        return () => clearInterval(randomTimer2);
     });
 
     return (
