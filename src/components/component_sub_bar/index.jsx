@@ -82,7 +82,7 @@ export const SubBar = (props) => {
                     subscribe();
                 }
                 else if(chat[time]["sub"] === false){
-                    unsubscribe();
+                    // unsubscribe();
                 }  
             }
 
