@@ -36,7 +36,7 @@ export const VoteZone = () => {
   return (
     <>
       <div className="container">
-      <h2>Choord Chooser 2000</h2>
+      <h2 className="chordTitle">Choord Chooser 2000</h2>
         {
           votesArray.map((option, i) => 
             <div key={i} className="voteOption">

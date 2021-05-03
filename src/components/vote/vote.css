@@ -1,73 +1,45 @@
-/* Rectangle 23 */
-.container {
-  position: absolute;
-  width: 217px;
-  height: 198px;
-  left: 20px;
-  top: 693px;
-
-  background: rgba(255, 188, 58, 0.5);
-  border: 3px solid #ffffff;
-  box-sizing: border-box;
-  backdrop-filter: blur(25px);
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 17px;
+.chordTitle {
+  margin-top: 0;
 }
 
-.container h2 {
-  /* Accords */
-
-  position: absolute;
-  width: 100%;
-  height: 21px;
-  top: calc(50% - 21px / 2 - 71.5px);
-
-  font-family: Bungee;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 20px;
-  /* identical to box height */
-  text-align: center;
-
-  color: #000000;
+.voteOption div {
+  position: relative;
 }
 
 .voteOption {
-  /* Accords A# Mot Carotte */
+  float: none;
+  height: 50px;
 
-  position: relative;
-  width: calc(100% - 13px * 2);
-  /* height: 113px; */
-  left: calc(50% - 129px / 2 - 20px);
-  top: calc(50% - 113px / 2 + 12.5px);
+  border: solid 3px #ffffff;
+  border-radius: 30px;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-
-  display: block;
-
-  color: #000000;
+  margin-top: 2px;
 }
 
 .voteOption .chordName  {
   float: left;
-  width : 50%;
+  left: 16px;
+  top: 16px;
 }
+
 .voteOption .voteCount  {
-  float: left;
-  width : 25%;
-}
-.voteOption .button  {
-  width: 25%;
-  float: left;
+  float: right;
+  top: 7px;
+  right: 7px;
+
+  width: 30px;
+  height: 26px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  padding-top: 4px;
+
+  border: solid 3px #ffffff;
+  border-radius: 30px;
 }
 
 .voteWinner {
-  position : absolute;
-  bottom : 13px;
+  position : relative;
   text-align: center;
 }

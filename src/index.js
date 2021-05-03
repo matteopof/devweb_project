@@ -4,6 +4,7 @@ import './index.css';
 import './components/chat/chat.css';
 import './components/component_sub_bar/sub_bar.css';
 import './components/reactions/vote.css';
+import './components/vote/vote.css';
 
 import App from './App';
 import { Chat } from './components/chat/index';
