@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { SubBar } from './components/component_sub_bar/index';
 import { Vote } from './components/reactions/index';
+import { VoteZone } from './components/vote/index';
 
 const Routing = () => {
   return(
@@ -19,7 +20,8 @@ const Routing = () => {
         <Route exact path="/" component={App} />
         <Route path="/chat" component={Chat} />
         <Route path="/subbar" component={SubBar} />
-        <Route path="/vote" component={Vote} />
+        <Route path="/reaction" component={Vote} />
+        <Route path="/vote" component={VoteZone} />
       </Switch>
     </Router>
   )
