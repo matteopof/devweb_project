@@ -16,13 +16,59 @@ const Reactions = {
     bad: 3,
     puke: 4
 };
+/*😍😄😉😐😖*/
+const add = (comment) => {
+    if (comment){
+        if(comment.includes("😍")){
+            reacArr.push(0);
+        }
+        if(comment.includes("😄")){
+            reacArr.push(1);
+        }
+        if(comment.includes("😉")){
+            reacArr.push(2);
+        }
+        if(comment.includes("😐")){
+            reacArr.push(3);
+        }
+        if(comment.includes("😖")){
+            reacArr.push(4);
+        }
+    }
+    
 
+    return (null);
+};
 // eslint-disable-next-line import/prefer-default-export 
-export const Vote = () => {
-    console.log(_.countBy(reacArr));
-    console.log(Object.values(_.countBy(reacArr))[0]);
 
-    const counts = _.countBy(reacArr); //Compte le nombre d'occurence dans le tableau de Réactions et en fait un Objet => { 0 : 14, 1: 3 ....} 
+export const Vote = () => {
+
+    //console.log(nbPuke);
+
+    const [seconds, setSeconds] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSeconds(seconds + 1);
+            console.log(seconds);
+            const comment = chat[seconds]["comment"];
+            console.log(comment);
+            if (seconds < comment.length){
+                add(comment);
+            }
+            
+            console.log(reacArr.length);
+            if (comment === '😖'){
+                console.log('Coucou Paulo')
+            }
+    }, 900);
+    return () => clearInterval(interval);
+});
+
+    //console.log(_.countBy(reacArr));
+    //console.log(Object.values(_.countBy(reacArr))[0]);
+
+    const counts = _.countBy(reacArr); //Compte le nombre d'occurence dans le tableau de Réactions et en fait un Objet => { 0 : 14, 1: 3, 2: 0, 3: 10, 4 : 3} 
 
     const nbKiss = (Object.values(counts)[0]); //On accède aux valeurs stockées dans chaque clés 
     const nbHappy = (Object.values(counts)[1]);
@@ -30,33 +76,17 @@ export const Vote = () => {
     const nbBad = (Object.values(counts)[3]);
     const nbPuke = (Object.values(counts)[4]);
 
-    const kissHeight = (nbKiss / reacArr.length) * 200;
-    const happyHeight = (nbHappy / reacArr.length) * 200;
-    const okHeight = (nbOk / reacArr.length) * 200;
-    const badHeight = (nbBad / reacArr.length) * 200;
-    const pukeHeight = (nbPuke / reacArr.length) * 200;
+    const maxSize = 200;
+
+    const kissHeight = (nbKiss / reacArr.length) * maxSize;
+    const happyHeight = (nbHappy / reacArr.length) * maxSize;
+    const okHeight = (nbOk / reacArr.length) * maxSize;
+    const badHeight = (nbBad / reacArr.length) * maxSize;
+    const pukeHeight = (nbPuke / reacArr.length) * maxSize;
 
 
 
-    console.log(nbPuke);
-
-    const [seconds, setSeconds] = useState(0);
-    const [index, setIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setSeconds(seconds => seconds + 1);
-            setIndex(index + 1);
-            const comment = chat[index]["comment"];
-            if (comment === '😍'){
-                console.log('Coucou Paulo')
-            }
-        // let ran = Math.floor(Math.random() * 5)
-        // console.log(ran);
-        // reacArr.push(ran);
-    }, 900);
-    return () => clearInterval(interval);
-}, []);
+    
 
 const [message, setMessage] = useState("");
 const [displayValue, setDisplayValue] = useState("none");
