@@ -4,6 +4,7 @@ import './index.css';
 import './components/chat/chat.css';
 import './components/component_sub_bar/sub_bar.css';
 import './components/reactions/vote.css';
+import './components/vote/vote.css';
 
 import App from './App';
 import { Chat } from './components/chat/index';
@@ -11,6 +12,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { SubBar } from './components/component_sub_bar/index';
 import { Vote } from './components/reactions/index';
+import { VoteZone } from './components/vote/index';
 
 const Routing = () => {
   return(
@@ -19,7 +21,8 @@ const Routing = () => {
         <Route exact path="/" component={App} />
         <Route path="/chat" component={Chat} />
         <Route path="/subbar" component={SubBar} />
-        <Route path="/vote" component={Vote} />
+        <Route path="/reaction" component={Vote} />
+        <Route path="/vote" component={VoteZone} />
       </Switch>
     </Router>
   )
