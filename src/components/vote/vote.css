@@ -2,27 +2,41 @@
   margin-top: 0;
 }
 
+.voteOption div {
+  position: relative;
+}
+
 .voteOption {
   float: none;
-  height: 40px;
+  height: 50px;
+
+  border: solid 3px #ffffff;
+  border-radius: 30px;
+
+  margin-top: 2px;
 }
 
 .voteOption .chordName  {
   float: left;
+  left: 16px;
+  top: 16px;
 }
+
 .voteOption .voteCount  {
   float: right;
+  top: 7px;
+  right: 7px;
 
   width: 30px;
   height: 26px;
-
-  border: solid 3px #ffffff;
-  border-radius: 30px;
 
   text-align: center;
   vertical-align: middle;
 
   padding-top: 4px;
+
+  border: solid 3px #ffffff;
+  border-radius: 30px;
 }
 
 .voteWinner {
