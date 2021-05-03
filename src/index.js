@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { SubBar } from './components/component_sub_bar/index';
 import { Vote } from './components/reactions/index';
 import { VoteZone } from './components/vote/index';
+import { Clock } from './components/clock/clock';
 
 const Routing = () => {
   return(
@@ -23,6 +24,7 @@ const Routing = () => {
         <Route path="/subbar" component={SubBar} />
         <Route path="/reaction" component={Vote} />
         <Route path="/vote" component={VoteZone} />
+        <Route path="/clock" component={Clock} />
       </Switch>
     </Router>
   )

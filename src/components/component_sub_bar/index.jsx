@@ -47,7 +47,6 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//{artiste: "Oasis", song: "Wonderwall"} , {artiste: "Diams", song: "La boulette"} 
 export const SubBar = (props) => {
     const [followers, setFollow] = useState(0)
     const [subscribers, setSub] = useState(0)
@@ -89,7 +88,7 @@ export const SubBar = (props) => {
 
             follow();
             
-            if(time%musictiming==0){
+            if(time%musictiming===0){
                 setMusic(getRandomInt(1,songs.length-1));
             }
             
