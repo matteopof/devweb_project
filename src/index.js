@@ -1,12 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './components/chat/chat.css';
+import './components/component_sub_bar/sub_bar.css';
+import './components/reactions/vote.css';
+
 import App from './App';
+import { Chat } from './components/chat/index';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { SubBar } from './components/component_sub_bar/index';
+import { Vote } from './components/reactions/index';
+
+const Routing = () => {
+  return(
+    <Router>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/chat" component={Chat} />
+        <Route path="/subbar" component={SubBar} />
+        <Route path="/vote" component={Vote} />
+      </Switch>
+    </Router>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Routing />
   </React.StrictMode>,
   document.getElementById('root')
 );

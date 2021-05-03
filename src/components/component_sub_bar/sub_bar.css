@@ -1,0 +1,31 @@
+.subbar {
+    width: 1056px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.sub_component {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed_bar{
+    width: 100px;
+    height:10px;
+    margin-left: 10px;
+    border: #FFFFFF 1px solid ;
+    border-radius: 20px;
+    padding:0px;
+}
+
+.moving_bar{
+    background-color: #ffffff;
+    border-radius: 200px;
+    width: 40px;
+    height:10px;
+    margin: 0px;
+}
+
