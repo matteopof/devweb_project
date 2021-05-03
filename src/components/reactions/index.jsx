@@ -6,6 +6,7 @@ import badEmoji from './img/emojiBad.png';
 import pukeEmoji from './img/emojiPuke.png';
 
 import _ from 'lodash';
+
 const reacArr = [];
 const Reactions = {
     kiss: 0,
@@ -34,6 +35,8 @@ export const Vote = () => {
     const badHeight = (nbBad / reacArr.length) * 200;
     const pukeHeight = (nbPuke / reacArr.length) * 200;
 
+   
+
     console.log(nbPuke);
 
     const [seconds, setSeconds] = useState(0);
@@ -48,23 +51,39 @@ export const Vote = () => {
         return () => clearInterval(interval);
       }, []);
 
+      const [message, setMessage] = useState("");
+      const [displayValue, setDisplayValue] = useState("none");
+  
+      useEffect(() => {
+          if((nbHappy+nbKiss) > (nbBad+nbPuke) && reacArr.length >= 10){
+              setDisplayValue("block");
+              setMessage("On dirait bien que ça vous plaît !");
+          }
+          if((nbHappy+nbKiss) < (nbBad+nbPuke) && reacArr.length >= 10){
+            setDisplayValue("block");
+            setMessage("On va essayer de faire mieux !");
+          }
+        });
 
 
     return (
-        <div className="container">
+        <div className="container column vote_container">  
+            <div className="message" style={{display : displayValue}}>
+                <p>{message}</p>
+            </div>
             <div className="voteGraph">
-                <div className="kiss bar" style={{ height: kissHeight }}></div>
-                <div className="happy bar" style={{ height: happyHeight }}></div>
-                <div className="ok bar" style={{ height: okHeight }}></div>
-                <div className="bad bar " style={{ height: badHeight }}></div>
-                <div className="puke bar" style={{ height: pukeHeight }}></div>
+                <div className="bar" style={{ height: kissHeight }}></div>
+                <div className="bar" style={{ height: happyHeight }}></div>
+                <div className="bar" style={{ height: okHeight }}></div>
+                <div className="bar " style={{ height: badHeight }}></div>
+                <div className="bar" style={{ height: pukeHeight }}></div>
             </div>
             <div className="emojiGraph">
-                <img src={kissEmoji} alt="wtf" className="emoji emojiKiss" />
-                <img src={happyEmoji} alt="wtf" className="emoji emojiHappy" />
-                <img src={okEmoji} alt="wtf" className="emoji emojiOk" />
-                <img src={badEmoji} alt="wtf" className="emoji emojiBad" />
-                <img src={pukeEmoji} alt="wtf" className="emoji emojiPuke" />
+                <img src={kissEmoji} alt="kiss emoji" className="emoji" />
+                <img src={happyEmoji} alt="happy emoji" className="emoji" />
+                <img src={okEmoji} alt="ok emoji" className="emoji" />
+                <img src={badEmoji} alt="bad emoji" className="emoji" />
+                <img src={pukeEmoji} alt="puke emoji" className="emoji" />
             </div>
         </div>);
 
