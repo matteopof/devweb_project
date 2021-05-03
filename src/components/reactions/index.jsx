@@ -4,6 +4,7 @@ import happyEmoji from './img/emojiHappy.png';
 import okEmoji from './img/emojiOk.png';
 import badEmoji from './img/emojiBad.png';
 import pukeEmoji from './img/emojiPuke.png';
+import chat from '../chat/chat.json';
 
 import _ from 'lodash';
 
@@ -35,56 +36,62 @@ export const Vote = () => {
     const badHeight = (nbBad / reacArr.length) * 200;
     const pukeHeight = (nbPuke / reacArr.length) * 200;
 
-   
+
 
     console.log(nbPuke);
 
     const [seconds, setSeconds] = useState(0);
+    const [index, setIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-          setSeconds(seconds => seconds + 1);
-          let ran = Math.floor(Math.random() * 5)
-            console.log(ran);
-            reacArr.push(ran);
-        }, 1000);
-        return () => clearInterval(interval);
-      }, []);
+            setSeconds(seconds => seconds + 1);
+            setIndex(index + 1);
+            const comment = chat[index]["comment"];
+            if (comment === '😍'){
+                console.log('Coucou Paulo')
+            }
+        // let ran = Math.floor(Math.random() * 5)
+        // console.log(ran);
+        // reacArr.push(ran);
+    }, 900);
+    return () => clearInterval(interval);
+}, []);
 
-      const [message, setMessage] = useState("");
-      const [displayValue, setDisplayValue] = useState("none");
-  
-      useEffect(() => {
-          if((nbHappy+nbKiss) > (nbBad+nbPuke) && reacArr.length >= 10){
-              setDisplayValue("block");
-              setMessage("On dirait bien que ça vous plaît !");
-          }
-          if((nbHappy+nbKiss) < (nbBad+nbPuke) && reacArr.length >= 10){
-            setDisplayValue("block");
-            setMessage("On va essayer de faire mieux !");
-          }
-        });
+const [message, setMessage] = useState("");
+const [displayValue, setDisplayValue] = useState("none");
+
+useEffect(() => {
+    if ((nbHappy + nbKiss) > (nbBad + nbPuke) && reacArr.length >= 10) {
+        setDisplayValue("block");
+        setMessage("On dirait bien que ça vous plaît !");
+    }
+    if ((nbHappy + nbKiss) < (nbBad + nbPuke) && reacArr.length >= 10) {
+        setDisplayValue("block");
+        setMessage("On va essayer de faire mieux !");
+    }
+});
 
 
-    return (
-        <div className="container column vote_container">  
-            <div className="message" style={{display : displayValue}}>
-                <p>{message}</p>
-            </div>
-            <div className="voteGraph">
-                <div className="bar" style={{ height: kissHeight }}></div>
-                <div className="bar" style={{ height: happyHeight }}></div>
-                <div className="bar" style={{ height: okHeight }}></div>
-                <div className="bar " style={{ height: badHeight }}></div>
-                <div className="bar" style={{ height: pukeHeight }}></div>
-            </div>
-            <div className="emojiGraph">
-                <img src={kissEmoji} alt="kiss emoji" className="emoji" />
-                <img src={happyEmoji} alt="happy emoji" className="emoji" />
-                <img src={okEmoji} alt="ok emoji" className="emoji" />
-                <img src={badEmoji} alt="bad emoji" className="emoji" />
-                <img src={pukeEmoji} alt="puke emoji" className="emoji" />
-            </div>
-        </div>);
+return (
+    <div className="container column vote_container">
+        <div className="message" style={{ display: displayValue }}>
+            <p>{message}</p>
+        </div>
+        <div className="voteGraph">
+            <div className="bar" style={{ height: kissHeight }}></div>
+            <div className="bar" style={{ height: happyHeight }}></div>
+            <div className="bar" style={{ height: okHeight }}></div>
+            <div className="bar " style={{ height: badHeight }}></div>
+            <div className="bar" style={{ height: pukeHeight }}></div>
+        </div>
+        <div className="emojiGraph">
+            <img src={kissEmoji} alt="kiss emoji" className="emoji" />
+            <img src={happyEmoji} alt="happy emoji" className="emoji" />
+            <img src={okEmoji} alt="ok emoji" className="emoji" />
+            <img src={badEmoji} alt="bad emoji" className="emoji" />
+            <img src={pukeEmoji} alt="puke emoji" className="emoji" />
+        </div>
+    </div>);
 
 };
