@@ -35,16 +35,16 @@ export const VoteZone = () => {
 
   return (
     <>
-      <div className="container">
+      <div id="choord" className="container text-center column spacearound ">
       <h2 className="chordTitle">Choord Chooser 2000</h2>
         {
           votesArray.map((option, i) => 
-            <div key={i} className="voteOption">
+            <div key={i} className="voteOption row row-centered">
               <div className="chordName">
-                {option.name}
+                <span>{option.name}</span>
               </div>
-              <div className="voteCount">
-                {option.votes}
+              <div className="voteCount column column-centered">
+                <span>{option.votes}</span>
               </div>
             </div>
           )
