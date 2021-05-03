@@ -39,7 +39,14 @@
   border-radius: 30px;
 }
 
+@keyframes winnerAnimation {
+  0% { background-color: red; }
+  50% { background-color: inherit;}
+}
+
 .voteWinner {
-  position : relative;
-  text-align: center;
+  animation-name: winnerAnimation;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

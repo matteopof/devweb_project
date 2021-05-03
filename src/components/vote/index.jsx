@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-const createOption = name => ({ name : name, votes : 0 });
+const createOption = name => ({ name : name, votes : 48 });
 
 const votesArray = [
   createOption('A'),
@@ -14,9 +14,12 @@ const voteFor = (choise) => {
 };
 
 const winner = () => {
-  return votesArray.reduce(
-    (prev, curr) => (curr.votes > prev.votes ? curr : prev)
-  )
+  const tmp = votesArray.filter(vote => (50 <= vote.votes));
+  if (0 == tmp.length) {
+    return null;
+  } else {
+    return tmp.reduce((prev, curr) => (curr.votes > prev.votes ? curr : prev))
+  }
 };
 
 export const VoteZone = () => {
@@ -33,13 +36,15 @@ export const VoteZone = () => {
       return () => clearInterval(interval);
     }, []);
 
+  const win = winner();
+
   return (
     <>
       <div className="container">
       <h2 className="chordTitle">Choord Chooser 2000</h2>
         {
           votesArray.map((option, i) => 
-            <div key={i} className="voteOption">
+            <div key={i} className={win === option ? "voteOption voteWinner" : "voteOption"}>
               <div className="chordName">
                 {option.name}
               </div>
@@ -49,9 +54,6 @@ export const VoteZone = () => {
             </div>
           )
         }
-        <div className="voteWinner">
-          And the winner is : {winner().name}
-        </div>
       </div>
     </>
   )
