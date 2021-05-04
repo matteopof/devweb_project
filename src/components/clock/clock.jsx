@@ -1,37 +1,34 @@
 import React, { useEffect, useState }  from 'react';
-//import axios from 'axios';
 
 
-
-export const Clock = (props) => {
-
-    const [chat, setChat] = useState(0)
-
+export const Clock = () => {
+    const [min, setMin] = useState(20);
+    const [sec, setSec] = useState(50);
     useEffect(() => {
-        fetch("https://api.npoint.io/8fbad75c668cb9509ea2")
-        .then((res) => res.json)
-        .then((data) => setChat(data));
-    }, []);
-        /*xios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2", {
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Methods': 'GET',
-                'Access-Control-Allow-Headers': 'Content-Type, Authorization'
-                
-            }
-          })
-//        .then (res => setTime(res.data.datetime))
-        .then (res => console.log(res))
-  
+        const timer = setInterval(() => {        
+        if(sec < 59){
+            setSec(sec + 1);
+        }
+        else{
+            setSec(0);
+            setMin(min + 1);
+        }
+        
 
 
+        }, 1000);
+        return () => clearInterval(timer);
+    });  
+
+    
+    var begintime = "";
+    if(sec < 10) begintime = min + ":0" + sec;
+    else begintime = min + ":" + sec;
 
     return (
-        <div className="container row subbar spacearound clock">
-           <p><strong>Time : </strong>{time}</p>
-        </div>
-        
-        )*/
-    
+        <div className="clock container row spacearound">
+        <p> {begintime}</p>
+    </div>
+    );
 
 };
