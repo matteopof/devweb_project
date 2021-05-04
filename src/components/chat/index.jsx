@@ -1,7 +1,12 @@
 import React, { useEffect, useState }  from 'react';
-import chat from './chat.json';
+import axios from 'axios';
 
-const Comment = (pseudo, content) => (
+var chat= [];
+axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
+  .then (res => chat = res.data)
+
+
+const Comment = ( pseudo, content) => (
     <div className='mt-1'>
         <span className='bold'>
             {pseudo} :

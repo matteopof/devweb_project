@@ -17,6 +17,9 @@ import { VoteZone } from './components/vote/index';
 import { Clock } from './components/clock/clock';
 import { SubgoalMessage } from './components/subgoal_message/index';
 
+
+
+
 const Routing = () => {
   return(
     <Router>
