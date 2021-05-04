@@ -3,13 +3,20 @@ import axios from 'axios';
 
 
 
-
 export const Clock = (props) => {
 
     const [time, setTime] = useState(0)
-        axios.get ( "http://worldtimeapi.org/api/timezone/Europe/Paris")
-        .then (res => setTime(res.data.datetime))
-    
+        axios.get ( "http://www.json-generator.com/api/json/get/ceYeigZtBu?indent=2"/*, {
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET',
+                'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+                
+            }
+          }*/)
+//        .then (res => setTime(res.data.datetime))
+        .then (res => console.log(res))
+  
 
 
 
