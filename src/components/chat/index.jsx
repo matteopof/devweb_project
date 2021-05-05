@@ -17,7 +17,7 @@ const Comment = ( pseudo, content) => (
 
 const SubComment = (pseudo) => (
     <div className='mt-1'>
-        <span className='bold'>
+        <span className='bold sub'>
             {pseudo} s'est abonné ! 
         </span>
     </div>
