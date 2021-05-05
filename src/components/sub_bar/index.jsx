@@ -33,9 +33,9 @@ const songs = [
     , {id: 25, artist: "John Lennon", song: "Imagine"} 
 ];
 
-const subGoal = 3;
-
+const subGoal = 30;
 export default subGoal
+
 
 
 const renderSong = (titleId) => {
@@ -52,7 +52,7 @@ function getRandomInt(min, max) {
 
 export const SubBar = (props) => {
     const [followers, setFollow] = useState(0)
-    const [subscribers, setSub] = useState(38)
+    const [subscribers, setSub] = useState(0)
     const [musicId, setMusic] = useState(1)
     const [time, setTime] = useState(0);
 
@@ -71,13 +71,11 @@ export const SubBar = (props) => {
 
     
     const increment = 0.5;
-    const musictiming = 10;
+    const musictiming = 100;
     
     useEffect(() => {
         const timer = setInterval(() => {        
         if(time < chat.length){
-            
-            
             
             setTime(time + 1);
             console.log(chat[time]);
@@ -98,6 +96,8 @@ export const SubBar = (props) => {
         }, 900);
         return () => clearInterval(timer);
     });
+
+    
 
     return (
     <div className="container row subbar spacearound">
