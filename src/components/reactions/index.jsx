@@ -50,9 +50,10 @@ export const Vote = () => {
         const interval = setInterval(() => {
             setSeconds(seconds + 1);
             //console.log(seconds);
-            const comment = chat[seconds]["comment"];
+            // const comment = chat[seconds]["comment"];
             //console.log(comment);
-            if (seconds < chat.length  && (typeof comment !== "undefined")/*&& Object.keys(chat)[2] === "comment" && (typeof comment !== "undefined")*/){
+            if (seconds < chat.length  && (typeof chat[seconds]["comment"] !== "undefined")/*&& Object.keys(chat)[2] === "comment" && (typeof comment !== "undefined")*/){
+                const comment = chat[seconds]["comment"];
                 add(comment);
                // console.log(chat.length);
             }
