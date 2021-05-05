@@ -33,7 +33,7 @@ const songs = [
     , {id: 25, artist: "John Lennon", song: "Imagine"} 
 ];
 
-const subGoal = 30;
+let subGoal = 30;
 export default subGoal
 
 
@@ -55,6 +55,8 @@ export const SubBar = (props) => {
     const [subscribers, setSub] = useState(28)
     const [musicId, setMusic] = useState(1)
     const [time, setTime] = useState(0);
+    const [subGoalEvolving, setSubGoal] = useState(subGoal);
+    const [subGoalChangeTiming, setSubGoalChangeTiming] = useState(0);
 
     const follow = () => {
         let number = followers + getRandomInt(-2,5)
@@ -83,6 +85,15 @@ export const SubBar = (props) => {
                 setMusic(getRandomInt(1,songs.length-1));
             }
             
+            if(subscribers === subGoal){
+                setSubGoalChangeTiming(subGoalChangeTiming + 1);
+            }
+
+            if(subGoalChangeTiming===10){
+                setSubGoalChangeTiming(0);
+                subGoal += 10;
+
+            }
         }       
         }, 900);
         return () => clearInterval(timer);

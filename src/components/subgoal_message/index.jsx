@@ -9,8 +9,8 @@ axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
 export const SubgoalMessage = () => {
     const [time, setTime] = useState(0);
     const [subs, setSub] = useState(28);
-    // const [messagedisplay, setMessageDisplay] = useState("none");    
-    const [toggleDisplay, setToggleDisplay] = useState("");    
+    const [messagedisplay, setMessageDisplay] = useState("none");    
+    const [toggleDisplay, setToggleDisplay] = useState("hiden");    
     
     useEffect(() => {
         const timer = setInterval(() => {        
@@ -26,7 +26,7 @@ export const SubgoalMessage = () => {
             }
             else{
                 // setMessageDisplay("none")
-                setToggleDisplay("");
+                setToggleDisplay("hiden");
             }
             
         }       
@@ -35,7 +35,7 @@ export const SubgoalMessage = () => {
     });
     
     return (
-        <div id={toggleDisplay} className="subgoal_message">
+        <div className={toggleDisplay} id="subgoal_message">
             <p>Subgoal atteint ! <br/> Merci à tous !</p>
         </div>
     );
