@@ -52,7 +52,7 @@ export const Vote = () => {
             //console.log(seconds);
             const comment = chat[seconds]["comment"];
             //console.log(comment);
-            if (seconds < chat.length && Object.keys(chat)[2] === "comment"){
+            if (seconds < chat.length  && (typeof comment !== "undefined")/*&& Object.keys(chat)[2] === "comment" && (typeof comment !== "undefined")*/){
                 add(comment);
                // console.log(chat.length);
             }
