@@ -53,7 +53,7 @@ function getRandomInt(min, max) {
 
 export const SubBar = (props) => {
     const [followers, setFollow] = useState(0)
-    const [subscribers, setSub] = useState(0)
+    const [subscribers, setSub] = useState(38)
     const [musicId, setMusic] = useState(1)
     const [time, setTime] = useState(0);
 
@@ -78,18 +78,17 @@ export const SubBar = (props) => {
         const timer = setInterval(() => {        
         if(time < chat.length){
             
-            setTime(time + increment);
-            if( Number.isInteger(time)){
-              
-                console.log(chat[time]);
-                if(chat[time]["sub"]) { 
-                    subscribe();
-                }
-                else if(chat[time]["sub"] === false){
-                    // unsubscribe();
-                }  
+            
+            
+            setTime(time + 1);
+            console.log(chat[time]);
+            if(chat[time]["sub"]) { 
+                subscribe();
             }
-
+            else if(chat[time]["sub"] === false){
+                // unsubscribe();
+            }
+                 
             follow();
             
             if(time%musictiming===0){

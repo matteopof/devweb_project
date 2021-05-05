@@ -10,7 +10,7 @@ const subGoal = 40;
 
 export const SubgoalMessage = () => {
     const [time, setTime] = useState(0);
-    const [subs, setSub] = useState(0);
+    const [subs, setSub] = useState(38);
 
     const [messagedisplay, setMessageDisplay] = useState("none");
 
