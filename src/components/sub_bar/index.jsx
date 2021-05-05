@@ -1,5 +1,4 @@
 import React, { useEffect, useState }  from 'react';
-
 import axios from 'axios';
 
 var chat= [];
@@ -34,7 +33,7 @@ const songs = [
     , {id: 25, artist: "John Lennon", song: "Imagine"} 
 ];
 
-const subGoal = 40;
+const subGoal = 3;
 
 export default subGoal
 
