@@ -1,23 +1,377 @@
 [
   {
     "pseudo" : "Morphyn",
-    "comment" : "Heyyy salut le tchat ! Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "comment" : "Bonjour !"
   },
   {
-    "pseudo" : "Morphyn",
+    "pseudo" : "SneaX",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Grossteak",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Nix ツ",
     "sub": true
   },
   {
-    "pseudo" : "Morphyn",
+    "pseudo" : "Synix",
     "sub": true
   },
   {
-    "pseudo" : "Morphyn",
+    "pseudo" : "Blackshark",
     "sub": false
   },
   {
-    "pseudo" : "Morphyn",
+    "pseudo" : "KaYoZz",
     "sub": true
+  },
+  {
+    "pseudo" : "DarkSlayer",
+    "comment" : "Bonjourrrr"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Psycho",
+    "comment" : "Hellooooo"
+  },
+  {
+    "pseudo" : "Mystic",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Bl4cK_G4m3r",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "VenoM",
+    "comment" : "Heyyy salut le tchat !"
+  },
+  {
+    "pseudo" : "Fammi un soffocotto",
+    "comment" : "Bonjourrrr"
+  },
+  {
+    "pseudo" : "Ninja dei poveri",
+    "comment" : "Kid avec la guitare éléctrique là 🥺 ❤️ "
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Nightmare",
+    "sub": true
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : "Franchement, le seul défaut que je vois, c'est que c'est trop court. On en veut plus ❤️"
+  },
+  {
+    "pseudo" : "Drazox",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Xeno",
+    "comment" : "😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "zReeZ_",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Zeyrox Gaming",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "Lucifer",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "jemand deutsch :)",
+    "comment" : "ddy, un artiste qui bouleverse et qui fait du bien ! Une voie qui te fait trembler ! Un bijoux ❤️"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : " 'Kid' est un véritable chef d'œuvre 👌"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "La reprise de Hamza elle mets les frissons et pourtant c'est pas un artiste que je suis ! Encore du lourd que vous nous proposez !"
+  },
+  {
+    "pseudo" : "Slayer",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Skyzon",
+    "comment" : "La toute première fois que j’ai entendu Eddy de Pretto c’était par hasard dans un festival : j’ai pris une claque magistrale! Et les sonorités de Nougaro ça m’a frappée aussi"
+  },
+  {
+    "pseudo" : "Ace",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Mocc a ki te viv",
+    "sub": true
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Morphy3asbaan",
+    "comment" : "Il à une voix qui fait passer l'émotion c'est vraiment trop beau"
+  },
+  {
+    "pseudo" : "Vipexツ",
+    "comment" : "Cette version de Kid est incroyable !"
+  },
+  {
+    "pseudo" : "BLACKEAGLE",
+    "sub": true
+  },{
+    "pseudo" : "✪ TroniiX",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "nopzY",
+    "comment" : "😄"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "iFeWeaR-",
+    "comment" : "ce grain de voix et ces prods, quel plaisir"
+  },
+  {
+    "pseudo" : "nix",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Kaos",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "TRAX",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "-Draco-",
+    "sub": true
+  },
+  {
+    "pseudo" : "ZaKro",
+    "comment" : "C'était Hadja et Léa Castel dans Popstar. Et je pense à leur version à chaque fois que j'entends cette chanson"
+  },
+  {
+    "pseudo" : "Mi dissocio",
+    "comment" : "C’est possible de mettre les reprises que vous faites (pas que cet épisode) sur les plateformes de streaming parce que c’est vraiment magnifique à chaque fois 😍😍🤞"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Tasty",
+    "comment" : "😖😐😖"
+  },
+  {
+    "pseudo" : "Arvel",
+    "comment" : "😄😍😍😍😍😍"
+  },
+  {
+    "pseudo" : "i m Groot",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "PYRO",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "SneaX",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Grossteak",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Nix ツ",
+    "sub": true
+  },
+  {
+    "pseudo" : "Synix",
+    "sub": true
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "KaYoZz",
+    "sub": true
+  },
+  {
+    "pseudo" : "DarkSlayer",
+    "comment" : "Ce passage à la guitare éléctrique sur Kid... 😍 !"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Psycho",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Mystic",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Bl4cK_G4m3r",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "VenoM",
+    "comment" : "Cette version de 'Kid' est incroyable ❤️"
+  },
+  {
+    "pseudo" : "Fammi un soffocotto",
+    "comment" : "Je veux cette version de Freaks sur Spotify, vraiment super job 🔥"
+  },
+  {
+    "pseudo" : "Ninja dei poveri",
+    "comment" : "Du lourd les gars. C’était puissant. Cette version de Freaks m’a mit des frissons"
+    },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Nightmare",
+    "sub": true
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : "La version de 'KID' est juste énorme !! Il faut la sortir !!"
+  },
+  {
+    "pseudo" : "Drazox",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Xeno",
+    "comment" : "😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "zReeZ_",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Zeyrox Gaming",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "Lucifer",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "jemand deutsch :)",
+    "comment" : "La meilleure entrée de l'émission 😂😂😂😂😂"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
   },
   {
     "pseudo" : "Smoke",
@@ -28,16 +382,509 @@
     "comment" : "Heyyy salut le tchat !"
   },
   {
-    "pseudo" : "Smoke",
+    "pseudo" : "Slayer",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "MAIS MOI MAIS MOI JE JOUE AVEC LES FIIILLES (désolée j'étais frustrée un peu que ce soit coupé tellement j'aime cette partie ahah mais c'était top quand même) merci <3"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Skyzon",
+    "comment" : "C'est pas un artiste que j'écoute mais même en plein cagnard j'ai eu les frissons sur freaks"
+  },
+  {
+    "pseudo" : "Ace",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Mocc a ki te viv",
+    "sub": true
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Morphy3asbaan",
+    "comment" : "Cette version de kid 😍 Merci pour ce moment, c'était tellement intense"
+  },
+  {
+    "pseudo" : "Vipexツ",
+    "comment" : "Oulalala...les frissons ! Ça pulse de ouf !"
+  },
+  {
+    "pseudo" : "BLACKEAGLE",
+    "sub": true
+  },{
+    "pseudo" : "✪ TroniiX",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "nopzY",
+    "comment" : "😄"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "iFeWeaR-",
+    "comment" : "Lourd le remix de kid!! Avec le changement de guitare, on sait le kiff de l’instant, abusé 🔥🔥"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "nix",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Kaos",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "TRAX",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "-Draco-",
+    "sub": true
+  },
+  {
+    "pseudo" : "ZaKro",
+    "comment" : "Whouaaaaa !!!! Cette version de Kid, trop d'émotion. Merci <3"
+  },
+  {
+    "pseudo" : "Mi dissocio",
+    "comment" : "Je veux ce single de 'tu verras' mais quel délicieux moment ! Merci messieurs !"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Tasty",
+    "comment" : "😖😐😖"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Arvel",
+    "comment" : "😄😍😍😍😍😍"
+  },
+  {
+    "pseudo" : "i m Groot",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "PYRO",
+    "comment" : "J'adore la version de Tu verras 😍❤"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "Bonjour !"
+  },
+  {
+    "pseudo" : "SneaX",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Grossteak",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Nix ツ",
+    "sub": true
+  },
+  {
+    "pseudo" : "Synix",
+    "sub": true
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "KaYoZz",
+    "sub": true
+  },
+  {
+    "pseudo" : "DarkSlayer",
     "comment" : "Bonjourrrr"
   },
   {
-    "pseudo" : "Morphyn",
-    "comment" : "Heyyy salut le tchat ! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit felis, commodo vitae maximus in, semper quis diam. Vivamus non mi porta, dictum nulla in, rutrum nisi. "
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Psycho",
+    "comment" : "Hellooooo"
+  },
+  {
+    "pseudo" : "Mystic",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Bl4cK_G4m3r",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "VenoM",
+    "comment" : "Heyyy salut le tchat !"
+  },
+  {
+    "pseudo" : "Fammi un soffocotto",
+    "comment" : "Bonjourrrr"
+  },
+  {
+    "pseudo" : "Ninja dei poveri",
+    "comment" : "Kid avec la guitare éléctrique là 🥺 ❤️ "
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Nightmare",
+    "sub": true
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : "Franchement, le seul défaut que je vois, c'est que c'est trop court. On en veut plus ❤️"
+  },
+  {
+    "pseudo" : "Drazox",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Xeno",
+    "comment" : "😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "zReeZ_",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Zeyrox Gaming",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "Lucifer",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "jemand deutsch :)",
+    "comment" : "ddy, un artiste qui bouleverse et qui fait du bien ! Une voie qui te fait trembler ! Un bijoux ❤️"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : " 'Kid' est un véritable chef d'œuvre 👌"
   },
   {
     "pseudo" : "Morphyn",
+    "comment" : "La reprise de Hamza elle mets les frissons et pourtant c'est pas un artiste que je suis ! Encore du lourd que vous nous proposez !"
+  },
+  {
+    "pseudo" : "Slayer",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Skyzon",
+    "comment" : "La toute première fois que j’ai entendu Eddy de Pretto c’était par hasard dans un festival : j’ai pris une claque magistrale! Et les sonorités de Nougaro ça m’a frappée aussi"
+  },
+  {
+    "pseudo" : "Ace",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Mocc a ki te viv",
     "sub": true
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Morphy3asbaan",
+    "comment" : "Il à une voix qui fait passer l'émotion c'est vraiment trop beau"
+  },
+  {
+    "pseudo" : "Vipexツ",
+    "comment" : "Cette version de Kid est incroyable !"
+  },
+  {
+    "pseudo" : "BLACKEAGLE",
+    "sub": true
+  },{
+    "pseudo" : "✪ TroniiX",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "nopzY",
+    "comment" : "😄"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "iFeWeaR-",
+    "comment" : "ce grain de voix et ces prods, quel plaisir"
+  },
+  {
+    "pseudo" : "nix",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Kaos",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "TRAX",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "-Draco-",
+    "sub": true
+  },
+  {
+    "pseudo" : "ZaKro",
+    "comment" : "C'était Hadja et Léa Castel dans Popstar. Et je pense à leur version à chaque fois que j'entends cette chanson"
+  },
+  {
+    "pseudo" : "Mi dissocio",
+    "comment" : "C’est possible de mettre les reprises que vous faites (pas que cet épisode) sur les plateformes de streaming parce que c’est vraiment magnifique à chaque fois 😍😍🤞"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Tasty",
+    "comment" : "😖😐😖"
+  },
+  {
+    "pseudo" : "Arvel",
+    "comment" : "😄😍😍😍😍😍"
+  },
+  {
+    "pseudo" : "i m Groot",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "PYRO",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "SneaX",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Grossteak",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Nix ツ",
+    "sub": true
+  },
+  {
+    "pseudo" : "Synix",
+    "sub": true
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "KaYoZz",
+    "sub": true
+  },
+  {
+    "pseudo" : "DarkSlayer",
+    "comment" : "Ce passage à la guitare éléctrique sur Kid... 😍 !"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Psycho",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Mystic",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Bl4cK_G4m3r",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "VenoM",
+    "comment" : "Cette version de 'Kid' est incroyable ❤️"
+  },
+  {
+    "pseudo" : "Fammi un soffocotto",
+    "comment" : "Je veux cette version de Freaks sur Spotify, vraiment super job 🔥"
+  },
+  {
+    "pseudo" : "Ninja dei poveri",
+    "comment" : "Du lourd les gars. C’était puissant. Cette version de Freaks m’a mit des frissons"
+    },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Nightmare",
+    "sub": true
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : "La version de 'KID' est juste énorme !! Il faut la sortir !!"
+  },
+  {
+    "pseudo" : "Drazox",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Xeno",
+    "comment" : "😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "zReeZ_",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Zeyrox Gaming",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "Lucifer",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "jemand deutsch :)",
+    "comment" : "La meilleure entrée de l'émission 😂😂😂😂😂"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
   },
   {
     "pseudo" : "Smoke",
@@ -48,6 +895,511 @@
     "comment" : "Heyyy salut le tchat !"
   },
   {
+    "pseudo" : "Slayer",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "MAIS MOI MAIS MOI JE JOUE AVEC LES FIIILLES (désolée j'étais frustrée un peu que ce soit coupé tellement j'aime cette partie ahah mais c'était top quand même) merci <3"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Skyzon",
+    "comment" : "C'est pas un artiste que j'écoute mais même en plein cagnard j'ai eu les frissons sur freaks"
+  },
+  {
+    "pseudo" : "Ace",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Mocc a ki te viv",
+    "sub": true
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Morphy3asbaan",
+    "comment" : "Cette version de kid 😍 Merci pour ce moment, c'était tellement intense"
+  },
+  {
+    "pseudo" : "Vipexツ",
+    "comment" : "Oulalala...les frissons ! Ça pulse de ouf !"
+  },
+  {
+    "pseudo" : "BLACKEAGLE",
+    "sub": true
+  },{
+    "pseudo" : "✪ TroniiX",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "nopzY",
+    "comment" : "😄"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "iFeWeaR-",
+    "comment" : "Lourd le remix de kid!! Avec le changement de guitare, on sait le kiff de l’instant, abusé 🔥🔥"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "nix",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Kaos",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "TRAX",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "-Draco-",
+    "sub": true
+  },
+  {
+    "pseudo" : "ZaKro",
+    "comment" : "Whouaaaaa !!!! Cette version de Kid, trop d'émotion. Merci <3"
+  },
+  {
+    "pseudo" : "Mi dissocio",
+    "comment" : "Je veux ce single de 'tu verras' mais quel délicieux moment ! Merci messieurs !"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Tasty",
+    "comment" : "😖😐😖"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Arvel",
+    "comment" : "😄😍😍😍😍😍"
+  },
+  {
+    "pseudo" : "i m Groot",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "PYRO",
+    "comment" : "J'adore la version de Tu verras 😍❤"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "Bonjour !"
+  },
+  {
+    "pseudo" : "SneaX",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Grossteak",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Nix ツ",
+    "sub": true
+  },
+  {
+    "pseudo" : "Synix",
+    "sub": true
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "KaYoZz",
+    "sub": true
+  },
+  {
+    "pseudo" : "DarkSlayer",
+    "comment" : "Bonjourrrr"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Psycho",
+    "comment" : "Hellooooo"
+  },
+  {
+    "pseudo" : "Mystic",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Bl4cK_G4m3r",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "VenoM",
+    "comment" : "Heyyy salut le tchat !"
+  },
+  {
+    "pseudo" : "Fammi un soffocotto",
+    "comment" : "Bonjourrrr"
+  },
+  {
+    "pseudo" : "Ninja dei poveri",
+    "comment" : "Kid avec la guitare éléctrique là 🥺 ❤️ "
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Nightmare",
+    "sub": true
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : "Franchement, le seul défaut que je vois, c'est que c'est trop court. On en veut plus ❤️"
+  },
+  {
+    "pseudo" : "Drazox",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Xeno",
+    "comment" : "😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "zReeZ_",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Zeyrox Gaming",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "Lucifer",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "jemand deutsch :)",
+    "comment" : "ddy, un artiste qui bouleverse et qui fait du bien ! Une voie qui te fait trembler ! Un bijoux ❤️"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : " 'Kid' est un véritable chef d'œuvre 👌"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "La reprise de Hamza elle mets les frissons et pourtant c'est pas un artiste que je suis ! Encore du lourd que vous nous proposez !"
+  },
+  {
+    "pseudo" : "Slayer",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Skyzon",
+    "comment" : "La toute première fois que j’ai entendu Eddy de Pretto c’était par hasard dans un festival : j’ai pris une claque magistrale! Et les sonorités de Nougaro ça m’a frappée aussi"
+  },
+  {
+    "pseudo" : "Ace",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Mocc a ki te viv",
+    "sub": true
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Morphy3asbaan",
+    "comment" : "Il à une voix qui fait passer l'émotion c'est vraiment trop beau"
+  },
+  {
+    "pseudo" : "Vipexツ",
+    "comment" : "Cette version de Kid est incroyable !"
+  },
+  {
+    "pseudo" : "BLACKEAGLE",
+    "sub": true
+  },{
+    "pseudo" : "✪ TroniiX",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "nopzY",
+    "comment" : "😄"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "iFeWeaR-",
+    "comment" : "ce grain de voix et ces prods, quel plaisir"
+  },
+  {
+    "pseudo" : "nix",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Kaos",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "TRAX",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "-Draco-",
+    "sub": true
+  },
+  {
+    "pseudo" : "ZaKro",
+    "comment" : "C'était Hadja et Léa Castel dans Popstar. Et je pense à leur version à chaque fois que j'entends cette chanson"
+  },
+  {
+    "pseudo" : "Mi dissocio",
+    "comment" : "C’est possible de mettre les reprises que vous faites (pas que cet épisode) sur les plateformes de streaming parce que c’est vraiment magnifique à chaque fois 😍😍🤞"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Tasty",
+    "comment" : "😖😐😖"
+  },
+  {
+    "pseudo" : "Arvel",
+    "comment" : "😄😍😍😍😍😍"
+  },
+  {
+    "pseudo" : "i m Groot",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "PYRO",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "SneaX",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Grossteak",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Nix ツ",
+    "sub": true
+  },
+  {
+    "pseudo" : "Synix",
+    "sub": true
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "KaYoZz",
+    "sub": true
+  },
+  {
+    "pseudo" : "DarkSlayer",
+    "comment" : "Ce passage à la guitare éléctrique sur Kid... 😍 !"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Psycho",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Mystic",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Bl4cK_G4m3r",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "VenoM",
+    "comment" : "Cette version de 'Kid' est incroyable ❤️"
+  },
+  {
+    "pseudo" : "Fammi un soffocotto",
+    "comment" : "Je veux cette version de Freaks sur Spotify, vraiment super job 🔥"
+  },
+  {
+    "pseudo" : "Ninja dei poveri",
+    "comment" : "Du lourd les gars. C’était puissant. Cette version de Freaks m’a mit des frissons"
+    },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Nightmare",
+    "sub": true
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : "La version de 'KID' est juste énorme !! Il faut la sortir !!"
+  },
+  {
+    "pseudo" : "Drazox",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Xeno",
+    "comment" : "😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "zReeZ_",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Zeyrox Gaming",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "Lucifer",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "jemand deutsch :)",
+    "comment" : "La meilleure entrée de l'émission 😂😂😂😂😂"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
     "pseudo" : "Smoke",
     "comment" : "Bonjourrrr"
   },
@@ -56,43 +1408,647 @@
     "comment" : "Heyyy salut le tchat !"
   },
   {
-    "pseudo" : "Smoke",
-    "comment" : "Bonjourrrr"
+    "pseudo" : "Slayer",
+    "comment" : "😐"
   },
   {
     "pseudo" : "Morphyn",
+    "comment" : "MAIS MOI MAIS MOI JE JOUE AVEC LES FIIILLES (désolée j'étais frustrée un peu que ce soit coupé tellement j'aime cette partie ahah mais c'était top quand même) merci <3"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Skyzon",
+    "comment" : "C'est pas un artiste que j'écoute mais même en plein cagnard j'ai eu les frissons sur freaks"
+  },
+  {
+    "pseudo" : "Ace",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Mocc a ki te viv",
     "sub": true
   },
   {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Morphy3asbaan",
+    "comment" : "Cette version de kid 😍 Merci pour ce moment, c'était tellement intense"
+  },
+  {
+    "pseudo" : "Vipexツ",
+    "comment" : "Oulalala...les frissons ! Ça pulse de ouf !"
+  },
+  {
+    "pseudo" : "BLACKEAGLE",
+    "sub": true
+  },{
+    "pseudo" : "✪ TroniiX",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "nopzY",
+    "comment" : "😄"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "iFeWeaR-",
+    "comment" : "Lourd le remix de kid!! Avec le changement de guitare, on sait le kiff de l’instant, abusé 🔥🔥"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "nix",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Kaos",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "TRAX",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "-Draco-",
+    "sub": true
+  },
+  {
+    "pseudo" : "ZaKro",
+    "comment" : "Whouaaaaa !!!! Cette version de Kid, trop d'émotion. Merci <3"
+  },
+  {
+    "pseudo" : "Mi dissocio",
+    "comment" : "Je veux ce single de 'tu verras' mais quel délicieux moment ! Merci messieurs !"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Tasty",
+    "comment" : "😖😐😖"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Arvel",
+    "comment" : "😄😍😍😍😍😍"
+  },
+  {
+    "pseudo" : "i m Groot",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "PYRO",
+    "comment" : "J'adore la version de Tu verras 😍❤"
+  },
+  {
     "pseudo" : "Morphyn",
-    "comment" : "Heyyy salut le tchat ! Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+    "comment" : "Bonjour !"
+  },
+  {
+    "pseudo" : "SneaX",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Grossteak",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Nix ツ",
+    "sub": true
+  },
+  {
+    "pseudo" : "Synix",
+    "sub": true
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "KaYoZz",
+    "sub": true
+  },
+  {
+    "pseudo" : "DarkSlayer",
+    "comment" : "Bonjourrrr"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Psycho",
+    "comment" : "Hellooooo"
+  },
+  {
+    "pseudo" : "Mystic",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Bl4cK_G4m3r",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "VenoM",
+    "comment" : "Heyyy salut le tchat !"
+  },
+  {
+    "pseudo" : "Fammi un soffocotto",
+    "comment" : "Bonjourrrr"
+  },
+  {
+    "pseudo" : "Ninja dei poveri",
+    "comment" : "Kid avec la guitare éléctrique là 🥺 ❤️ "
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Nightmare",
+    "sub": true
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : "Franchement, le seul défaut que je vois, c'est que c'est trop court. On en veut plus ❤️"
+  },
+  {
+    "pseudo" : "Drazox",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Xeno",
+    "comment" : "😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "zReeZ_",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Zeyrox Gaming",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "Lucifer",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "jemand deutsch :)",
+    "comment" : "ddy, un artiste qui bouleverse et qui fait du bien ! Une voie qui te fait trembler ! Un bijoux ❤️"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : " 'Kid' est un véritable chef d'œuvre 👌"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "La reprise de Hamza elle mets les frissons et pourtant c'est pas un artiste que je suis ! Encore du lourd que vous nous proposez !"
+  },
+  {
+    "pseudo" : "Slayer",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Skyzon",
+    "comment" : "La toute première fois que j’ai entendu Eddy de Pretto c’était par hasard dans un festival : j’ai pris une claque magistrale! Et les sonorités de Nougaro ça m’a frappée aussi"
+  },
+  {
+    "pseudo" : "Ace",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Mocc a ki te viv",
+    "sub": true
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Morphy3asbaan",
+    "comment" : "Il à une voix qui fait passer l'émotion c'est vraiment trop beau"
+  },
+  {
+    "pseudo" : "Vipexツ",
+    "comment" : "Cette version de Kid est incroyable !"
+  },
+  {
+    "pseudo" : "BLACKEAGLE",
+    "sub": true
+  },{
+    "pseudo" : "✪ TroniiX",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "nopzY",
+    "comment" : "😄"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "iFeWeaR-",
+    "comment" : "ce grain de voix et ces prods, quel plaisir"
+  },
+  {
+    "pseudo" : "nix",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Kaos",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "TRAX",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "-Draco-",
+    "sub": true
+  },
+  {
+    "pseudo" : "ZaKro",
+    "comment" : "C'était Hadja et Léa Castel dans Popstar. Et je pense à leur version à chaque fois que j'entends cette chanson"
+  },
+  {
+    "pseudo" : "Mi dissocio",
+    "comment" : "C’est possible de mettre les reprises que vous faites (pas que cet épisode) sur les plateformes de streaming parce que c’est vraiment magnifique à chaque fois 😍😍🤞"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Tasty",
+    "comment" : "😖😐😖"
+  },
+  {
+    "pseudo" : "Arvel",
+    "comment" : "😄😍😍😍😍😍"
+  },
+  {
+    "pseudo" : "i m Groot",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "PYRO",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Morphyn",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "SneaX",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Grossteak",
+    "comment" : "😍"
+  },
+  
+  {
+    "pseudo" : "Nix ツ",
+    "sub": true
+  },
+  {
+    "pseudo" : "Synix",
+    "sub": true
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "KaYoZz",
+    "sub": true
+  },
+  {
+    "pseudo" : "DarkSlayer",
+    "comment" : "Ce passage à la guitare éléctrique sur Kid... 😍 !"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Psycho",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Mystic",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Bl4cK_G4m3r",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "VenoM",
+    "comment" : "Cette version de 'Kid' est incroyable ❤️"
+  },
+  {
+    "pseudo" : "Fammi un soffocotto",
+    "comment" : "Je veux cette version de Freaks sur Spotify, vraiment super job 🔥"
+  },
+  {
+    "pseudo" : "Ninja dei poveri",
+    "comment" : "Du lourd les gars. C’était puissant. Cette version de Freaks m’a mit des frissons"
+    },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Nightmare",
+    "sub": true
+  },
+  {
+    "pseudo" : "Smoke",
+    "comment" : "La version de 'KID' est juste énorme !! Il faut la sortir !!"
+  },
+  {
+    "pseudo" : "Drazox",
+    "comment" : "😍😍😍"
+  },
+  {
+    "pseudo" : "Xeno",
+    "comment" : "😍😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "zReeZ_",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Zeyrox Gaming",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "Lucifer",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "jemand deutsch :)",
+    "comment" : "La meilleure entrée de l'émission 😂😂😂😂😂"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
   },
   {
     "pseudo" : "Smoke",
     "comment" : "Bonjourrrr"
-  },
-  {
-    "pseudo" : "Morphyn",
-    "sub": true
   },
   {
     "pseudo" : "Morphyn",
     "comment" : "Heyyy salut le tchat !"
   },
   {
-    "pseudo" : "Smoke",
-    "comment" : "Bonjourrrr"
+    "pseudo" : "Slayer",
+    "comment" : "😐"
   },
   {
     "pseudo" : "Morphyn",
+    "comment" : "MAIS MOI MAIS MOI JE JOUE AVEC LES FIIILLES (désolée j'étais frustrée un peu que ce soit coupé tellement j'aime cette partie ahah mais c'était top quand même) merci <3"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Skyzon",
+    "comment" : "C'est pas un artiste que j'écoute mais même en plein cagnard j'ai eu les frissons sur freaks"
+  },
+  {
+    "pseudo" : "Ace",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Mocc a ki te viv",
     "sub": true
   },
   {
-    "pseudo" : "Morphyn",
-    "comment" : "Heyyy salut le tchat ! Lorem ipsum dolor sit amet, consectetur adipiscing elit.  "
+    "pseudo" : "☆°Zeyrox°☆",
+    "comment" : "😍😍😍"
   },
   {
-    "pseudo" : "Smoke",
-    "comment" : "Bonjourrrr"
-  }
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Morphy3asbaan",
+    "comment" : "Cette version de kid 😍 Merci pour ce moment, c'était tellement intense"
+  },
+  {
+    "pseudo" : "Vipexツ",
+    "comment" : "Oulalala...les frissons ! Ça pulse de ouf !"
+  },
+  {
+    "pseudo" : "BLACKEAGLE",
+    "sub": true
+  },{
+    "pseudo" : "✪ TroniiX",
+    "comment" : "😐"
+  },
+  {
+    "pseudo" : "nopzY",
+    "comment" : "😄"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "iFeWeaR-",
+    "comment" : "Lourd le remix de kid!! Avec le changement de guitare, on sait le kiff de l’instant, abusé 🔥🔥"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "nix",
+    "comment" : "😖"
+  },
+  {
+    "pseudo" : "Kaos",
+    "comment" : "😍"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "TRAX",
+    "comment" : "😉😉"
+  },
+  {
+    "pseudo" : "-Draco-",
+    "sub": true
+  },
+  {
+    "pseudo" : "ZaKro",
+    "comment" : "Whouaaaaa !!!! Cette version de Kid, trop d'émotion. Merci <3"
+  },
+  {
+    "pseudo" : "Mi dissocio",
+    "comment" : "Je veux ce single de 'tu verras' mais quel délicieux moment ! Merci messieurs !"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Tasty",
+    "comment" : "😖😐😖"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Arvel",
+    "comment" : "😄😍😍😍😍😍"
+  },
+  {
+    "pseudo" : "i m Groot",
+    "comment" : "😉"
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "Blackshark",
+    "sub": false
+  },
+  {
+    "pseudo" : "PYRO",
+    "comment" : "J'adore la version de Tu verras 😍❤"
+  }    
 ]

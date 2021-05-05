@@ -1,6 +1,9 @@
 import React, { useEffect, useState }  from 'react';
-import chat from '../chat/chat.json';
+import axios from 'axios';
 
+var chat= [];
+axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
+.then (res => chat = res.data)
 
 const songs = [
     {id: 1, artist: "Oasis", song: "Wonderwall"} 
@@ -30,9 +33,9 @@ const songs = [
     , {id: 25, artist: "John Lennon", song: "Imagine"} 
 ];
 
-const subGoal = 40;
-
+const subGoal = 30;
 export default subGoal
+
 
 
 const renderSong = (titleId) => {
@@ -47,11 +50,11 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//{artiste: "Oasis", song: "Wonderwall"} , {artiste: "Diams", song: "La boulette"} 
 export const SubBar = (props) => {
     const [followers, setFollow] = useState(0)
     const [subscribers, setSub] = useState(0)
     const [musicId, setMusic] = useState(1)
+    const [time, setTime] = useState(0);
 
     const follow = () => {
         let number = followers + getRandomInt(-2,5)
@@ -66,36 +69,35 @@ export const SubBar = (props) => {
         if(subscribers>0) setSub(subscribers - 1)
     }
 
-    const [time, setTime] = useState(0);
+    
+    const increment = 0.5;
+    const musictiming = 100;
+    
     useEffect(() => {
         const timer = setInterval(() => {        
         if(time < chat.length){
+            
             setTime(time + 1);
-
+            console.log(chat[time]);
             if(chat[time]["sub"]) { 
                 subscribe();
             }
             else if(chat[time]["sub"] === false){
-                unsubscribe();
-            } 
+                // unsubscribe();
+            }
+                 
+            follow();
+            
+            if(time%musictiming===0){
+                setMusic(getRandomInt(1,songs.length-1));
+            }
+            
         }       
-        }, 2000);
+        }, 900);
         return () => clearInterval(timer);
     });
 
-    useEffect(() => {
-        const randomTimer = setInterval(() => {  
-            follow();    
-        }, getRandomInt(1000,2000));
-        return () => clearInterval(randomTimer);
-    });
-
-    useEffect(() => {
-        const randomTimer2 = setInterval(() => {  
-            setMusic(getRandomInt(1,songs.length-1));
-        }, getRandomInt(1000,7000));
-        return () => clearInterval(randomTimer2);
-    });
+    
 
     return (
     <div className="container row subbar spacearound">
