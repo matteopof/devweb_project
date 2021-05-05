@@ -1,24 +1,34 @@
-import React, { useState }  from 'react';
-import axios from 'axios';
+import React, { useEffect, useState }  from 'react';
 
 
+export const Clock = () => {
+    const [min, setMin] = useState(20);
+    const [sec, setSec] = useState(50);
+    useEffect(() => {
+        const timer = setInterval(() => {        
+        if(sec < 59){
+            setSec(sec + 1);
+        }
+        else{
+            setSec(0);
+            setMin(min + 1);
+        }
+        
 
 
-export const Clock = (props) => {
+        }, 1000);
+        return () => clearInterval(timer);
+    });  
 
-    const [time, setTime] = useState(0)
-        axios.get ( "http://worldtimeapi.org/api/timezone/Europe/Paris")
-        .then (res => setTime(res.data.datetime))
     
-
-
+    var begintime = "";
+    if(sec < 10) begintime = min + ":0" + sec;
+    else begintime = min + ":" + sec;
 
     return (
-        <div className="container row subbar spacearound clock">
-           <p><strong>Time : </strong>{time}</p>
-        </div>
-        
-        )
-    
+        <div className="clock row spacearound">
+        <p> {begintime}</p>
+    </div>
+    );
 
 };

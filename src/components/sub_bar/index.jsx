@@ -1,6 +1,9 @@
 import React, { useEffect, useState }  from 'react';
-import chat from '../chat/chat.json';
+import axios from 'axios';
 
+var chat= [];
+axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
+.then (res => chat = res.data)
 
 const songs = [
     {id: 1, artist: "Oasis", song: "Wonderwall"} 
@@ -30,9 +33,9 @@ const songs = [
     , {id: 25, artist: "John Lennon", song: "Imagine"} 
 ];
 
-const subGoal = 40;
-
+let subGoal = 30;
 export default subGoal
+
 
 
 const renderSong = (titleId) => {
@@ -49,9 +52,11 @@ function getRandomInt(min, max) {
 
 export const SubBar = (props) => {
     const [followers, setFollow] = useState(0)
-    const [subscribers, setSub] = useState(0)
+    const [subscribers, setSub] = useState(28)
     const [musicId, setMusic] = useState(1)
     const [time, setTime] = useState(0);
+    const [subGoalEvolving, setSubGoal] = useState(subGoal);
+    const [subGoalChangeTiming, setSubGoalChangeTiming] = useState(0);
 
     const follow = () => {
         let number = followers + getRandomInt(-2,5)
@@ -62,28 +67,16 @@ export const SubBar = (props) => {
         if(subscribers < subGoal) setSub(subscribers + 1)
     }
 
-    const unsubscribe = () => {
-        if(subscribers>0) setSub(subscribers - 1)
-    }
-
-    
-    const increment = 0.5;
-    const musictiming = 10;
+    const musictiming = 100;
     
     useEffect(() => {
         const timer = setInterval(() => {        
         if(time < chat.length){
             
-            setTime(time + increment);
-            if( Number.isInteger(time)){
-              
-                console.log(chat[time]);
-                if(chat[time]["sub"]) { 
-                    subscribe();
-                }
-                else if(chat[time]["sub"] === false){
-                    // unsubscribe();
-                }  
+            setTime(time + 1);
+            console.log(chat[time]);
+            if(chat[time]["sub"]) { 
+                subscribe();
             }
 
             follow();
@@ -92,10 +85,21 @@ export const SubBar = (props) => {
                 setMusic(getRandomInt(1,songs.length-1));
             }
             
+            if(subscribers === subGoal){
+                setSubGoalChangeTiming(subGoalChangeTiming + 1);
+            }
+
+            if(subGoalChangeTiming===10){
+                setSubGoalChangeTiming(0);
+                subGoal += 10;
+
+            }
         }       
         }, 900);
         return () => clearInterval(timer);
     });
+
+    
 
     return (
     <div className="container row subbar spacearound">

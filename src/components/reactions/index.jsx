@@ -4,18 +4,17 @@ import happyEmoji from './img/emojiHappy.png';
 import okEmoji from './img/emojiOk.png';
 import badEmoji from './img/emojiBad.png';
 import pukeEmoji from './img/emojiPuke.png';
-import chat from '../chat/chat.json';
 
 import _ from 'lodash';
 
+import axios from 'axios';
+
+var chat= [];
+axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
+.then (res => chat = res.data)
+
 const reacArr = [];
-const Reactions = {
-    kiss: 0,
-    happy: 1,
-    ok: 2,
-    bad: 3,
-    puke: 4
-};
+
 /*😍😄😉😐😖*/
 const add = (comment) => {
     if (comment){
