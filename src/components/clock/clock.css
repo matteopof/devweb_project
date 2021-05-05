@@ -1,6 +1,8 @@
 .clock {
     width: 100px;
 }
+
 .clock p {
     color: white;
+    font-size: 20px;
 }
