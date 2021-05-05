@@ -26,7 +26,7 @@ export const Clock = () => {
     else begintime = min + ":" + sec;
 
     return (
-        <div className="clock container row spacearound">
+        <div className="clock row spacearound">
         <p> {begintime}</p>
     </div>
     );
