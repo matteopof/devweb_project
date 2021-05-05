@@ -50,16 +50,12 @@ export const Vote = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setSeconds(seconds + 1);
-            console.log(seconds);
+            //console.log(seconds);
             const comment = chat[seconds]["comment"];
-            console.log(comment);
-            if (seconds < comment.length){
+            //console.log(comment);
+            if (seconds < chat.length){
                 add(comment);
-            }
-            
-            console.log(reacArr.length);
-            if (comment === '😖'){
-                console.log('Coucou Paulo')
+               // console.log(chat.length);
             }
     }, 900);
     return () => clearInterval(interval);
