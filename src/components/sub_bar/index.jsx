@@ -52,7 +52,7 @@ function getRandomInt(min, max) {
 
 export const SubBar = (props) => {
     const [followers, setFollow] = useState(0)
-    const [subscribers, setSub] = useState(0)
+    const [subscribers, setSub] = useState(28)
     const [musicId, setMusic] = useState(1)
     const [time, setTime] = useState(0);
 
@@ -65,12 +65,6 @@ export const SubBar = (props) => {
         if(subscribers < subGoal) setSub(subscribers + 1)
     }
 
-    const unsubscribe = () => {
-        if(subscribers>0) setSub(subscribers - 1)
-    }
-
-    
-    const increment = 0.5;
     const musictiming = 100;
     
     useEffect(() => {
@@ -82,10 +76,7 @@ export const SubBar = (props) => {
             if(chat[time]["sub"]) { 
                 subscribe();
             }
-            else if(chat[time]["sub"] === false){
-                // unsubscribe();
-            }
-                 
+
             follow();
             
             if(time%musictiming===0){
