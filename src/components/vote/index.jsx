@@ -1,6 +1,10 @@
 import React, {useEffect, useState} from 'react';
 
-const createOption = name => ({ name : name, votes : 48 });
+const voteStartValue = 0; // initial value for vote options
+const voteWinValue = 50;  // value to reach for win a vote
+const voteTimeout = 500; // Delay between to random votes
+
+const createOption = name => ({ name : name, votes : voteStartValue });
 
 const votesArray = [
   createOption('A'),
@@ -14,8 +18,8 @@ const voteFor = (choise) => {
 };
 
 const winner = () => {
-  const tmp = votesArray.filter(vote => (50 <= vote.votes));
-  if (0 == tmp.length) {
+  const tmp = votesArray.filter(vote => (voteWinValue <= vote.votes));
+  if (0 === tmp.length) {
     return null;
   } else {
     return tmp.reduce((prev, curr) => (curr.votes > prev.votes ? curr : prev))
@@ -31,18 +35,19 @@ const classof = (option, winner) => {
 export const VoteZone = () => {
 
   const [seconds, setSeconds] = useState(0);
+  const win = winner();
 
   useEffect(() => {
-      const interval = setInterval(() => {
-        setSeconds(seconds => seconds + 1);
-        let ran = Math.floor(Math.random() * 4)
+    const interval = setInterval(() => {
+      setSeconds(seconds => seconds + 1);
+      if (null === winner()) {
+          let ran = Math.floor(Math.random() * 4)
           console.log(ran);
           voteFor(ran);
-      }, 1000);
+        }
+      }, voteTimeout);
       return () => clearInterval(interval);
     }, []);
-
-  const win = winner();
 
   return (
     <>
