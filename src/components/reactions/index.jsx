@@ -90,7 +90,7 @@ const [message, setMessage] = useState("");
 const [displayValue, setDisplayValue] = useState("none");
 
 useEffect(() => {
-    if ((nbHappy + nbKiss) > (nbBad + nbPuke) && reacArr.length >= 10) {
+    if ((nbHappy + nbKiss) > (nbBad + nbPuke) && reacArr.length >= 25) {
         setDisplayValue("block");
         setMessage("On dirait bien que ça vous plaît !");
     }

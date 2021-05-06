@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
-const voteStartValue = 0; // initial value for vote options
-const voteWinValue = 50;  // value to reach for win a vote
+const voteStartValue = 70; // initial value for vote options
+const voteWinValue = 100;  // value to reach for win a vote
 const voteTimeout = 500; // Delay between to random votes
 
 const createOption = name => ({ name : name, votes : voteStartValue });
