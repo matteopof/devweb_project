@@ -31,7 +31,7 @@
 }
 
 @keyframes winnerAnimation {
-  0% { background-color: red; }
+  0% { background-color: rgb(255, 165, 129); }
   50% { background-color: inherit;}
 }
 

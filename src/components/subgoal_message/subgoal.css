@@ -1,12 +1,36 @@
-.subgoal_message
+#subgoal_message
 {
     width: 200px;
     height: 50px;
     border-radius: 50px;
-    background-color: white;
+    /* background-color: white; */
     justify-content: center;
     align-items: center;
     text-align:center;
     padding: 10px;
 }
-  
+
+.displayed {
+	animation: fadeIn 10s;
+  	opacity: 0;
+    display: flex;
+}
+
+.hiden{
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+  	opacity: 0;
+  }
+  5% {
+ 	opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100%{
+      opacity: 0;
+  }
+}

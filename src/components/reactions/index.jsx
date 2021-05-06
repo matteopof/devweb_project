@@ -14,13 +14,7 @@ axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
 .then (res => chat = res.data)
 
 const reacArr = [];
-const Reactions = {
-    kiss: 0,
-    happy: 1,
-    ok: 2,
-    bad: 3,
-    puke: 4
-};
+
 /*😍😄😉😐😖*/
 const add = (comment) => {
     if (comment){
@@ -55,16 +49,13 @@ export const Vote = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setSeconds(seconds + 1);
-            console.log(seconds);
-            const comment = chat[seconds]["comment"];
-            console.log(comment);
-            if (seconds < comment.length){
+            //console.log(seconds);
+            // const comment = chat[seconds]["comment"];
+            //console.log(comment);
+            if (seconds < chat.length  && (typeof chat[seconds]["comment"] !== "undefined")/*&& Object.keys(chat)[2] === "comment" && (typeof comment !== "undefined")*/){
+                const comment = chat[seconds]["comment"];
                 add(comment);
-            }
-            
-            console.log(reacArr.length);
-            if (comment === '😖'){
-                console.log('Coucou Paulo')
+               // console.log(chat.length);
             }
     }, 900);
     return () => clearInterval(interval);

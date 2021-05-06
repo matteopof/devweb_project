@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Emission Twitch de Musique
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Nous avons choisi de réaliser l’habillage d’une émission de live de musique. Le concept est simple, un hôte invite plusieurs artistes pour faire des lives musicaux. Ces lives sont principalement interactifs avec les viewers au travers du chat. En effet, les viewers proposent des contraintes pour dynamiser le live. Suite à un système de vote, un accord est imposé aux artistes lors de leurs impros. De plus, ils peuvent donner leur avis en commentaire afin de rendre compte de l’avis général. On peut également suivre en direct le nombre de followers et de subscribers.
 
-## Available Scripts
+## Lancer le projet avec OBS
 
-In the project directory, you can run:
+- Lancer le projet sur React
+- Ajouter la source vidéo
+- Ajouter les composants en faisant : nouvelle source → navigateur → adresse : localhost:300/__NOMCOMPONENT__ (les différents noms sont : /chat, /subbar, /subgoalmessage, /reaction, /vote, /clock)
+- Placer les composants
+- Fin 
 
-### `npm start`
+## Lancer le projet avec REACT
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Dans une invite de commande : 
+```sh
+npm run start
+```
+- Puis pour accéder à chacun des composants il suffit de rajouter /le composant à la fin de l’url localhost 
+- Component du chat : /chat
+- Component de la barre de suivi : /subbar
+- Component du message subgoal : /subgoalmessage
+- Component des reactions du public : /reaction
+- Component du vote pour l’accord: /vote
+- Component du temps du live : /clock

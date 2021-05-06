@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(235, 235, 235);
+  color : white;
 }
 
 code {
@@ -78,7 +79,7 @@ h2 {
 /************* Container ************/
 .container{
   border-radius: 15px; 
-  border: white solid 5px;
-  background-color: #ffbd3a;
+  border: white solid 3px;
+  background-color: #6ca2ff6b;
   padding: 2rem;
 }

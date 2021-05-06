@@ -6,6 +6,8 @@ import './components/sub_bar/sub_bar.css';
 import './components/reactions/vote.css';
 import './components/vote/vote.css';
 import './components/subgoal_message/subgoal.css';
+import './components/clock/clock.css';
+
 
 import App from './App';
 import { Chat } from './components/chat/index';
