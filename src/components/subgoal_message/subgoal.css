@@ -11,7 +11,7 @@
 }
 
 .displayed {
-	animation: fadeIn 10s;
+	animation: fadeIn 6s;
   	opacity: 0;
     display: flex;
 }

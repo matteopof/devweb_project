@@ -1,9 +1,10 @@
 import React, { useEffect, useState }  from 'react';
 import axios from 'axios';
 
-var chat= [];
-axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
-.then (res => chat = res.data)
+// var chat= [];
+// axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
+// .then (res => chat = res.data)
+import chat from './../chat/chat.json';
 
 const songs = [
     {id: 1, artist: "Oasis", song: "Wonderwall"} 
@@ -52,10 +53,9 @@ function getRandomInt(min, max) {
 
 export const SubBar = (props) => {
     const [followers, setFollow] = useState(0)
-    const [subscribers, setSub] = useState(28)
+    const [subscribers, setSub] = useState(20)
     const [musicId, setMusic] = useState(1)
     const [time, setTime] = useState(0);
-    const [subGoalEvolving, setSubGoal] = useState(subGoal);
     const [subGoalChangeTiming, setSubGoalChangeTiming] = useState(0);
 
     const follow = () => {
@@ -89,7 +89,7 @@ export const SubBar = (props) => {
                 setSubGoalChangeTiming(subGoalChangeTiming + 1);
             }
 
-            if(subGoalChangeTiming===10){
+            if(subGoalChangeTiming===2){
                 setSubGoalChangeTiming(0);
                 subGoal += 10;
 

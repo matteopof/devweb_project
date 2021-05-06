@@ -3,6 +3,7 @@
     height: 240px; 
     width:fit-content;
     position: relative;
+    margin-top: 100px;
 } 
  
 .voteGraph { 
