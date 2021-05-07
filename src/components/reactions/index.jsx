@@ -9,11 +9,9 @@ import _ from 'lodash';
 
 import axios from 'axios';
 
-// var chat= [];
-// axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
-// .then (res => chat = res.data)
-
-import chat from './../chat/chat.json';
+var chat= [];
+axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
+.then (res => chat = res.data)
 
 const reacArr = [];
 
@@ -44,28 +42,18 @@ const add = (comment) => {
 
 export const Vote = () => {
 
-    //console.log(nbPuke);
-
     const [seconds, setSeconds] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setSeconds(seconds + 1);
-            //console.log(seconds);
-            // const comment = chat[seconds]["comment"];
-            //console.log(comment);
             if (seconds < chat.length  && (typeof chat[seconds]["comment"] !== "undefined")/*&& Object.keys(chat)[2] === "comment" && (typeof comment !== "undefined")*/){
                 const comment = chat[seconds]["comment"];
                 add(comment);
-               // console.log(chat.length);
             }
     }, 900);
     return () => clearInterval(interval);
 });
-
-    //console.log(_.countBy(reacArr));
-    //console.log(Object.values(_.countBy(reacArr))[0]);
-
     const counts = _.countBy(reacArr); //Compte le nombre d'occurence dans le tableau de Réactions et en fait un Objet => { 0 : 14, 1: 3, 2: 0, 3: 10, 4 : 3} 
 
     const nbKiss = (Object.values(counts)[0]); //On accède aux valeurs stockées dans chaque clés 
@@ -81,10 +69,6 @@ export const Vote = () => {
     const okHeight = (nbOk / reacArr.length) * maxSize;
     const badHeight = (nbBad / reacArr.length) * maxSize;
     const pukeHeight = (nbPuke / reacArr.length) * maxSize;
-
-
-
-    
 
 const [message, setMessage] = useState("");
 const [displayValue, setDisplayValue] = useState("none");

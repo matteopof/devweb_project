@@ -1,10 +1,9 @@
 import React, { useEffect, useState }  from 'react';
-// import axios from 'axios';
-import chat from './chat.json';
+import axios from 'axios';
 
-// var chat= [];
-// axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
-//   .then (res => chat = res.data)
+var chat= [];
+axios.get ( "https://api.npoint.io/8fbad75c668cb9509ea2")
+  .then (res => chat = res.data)
 
 
 const Comment = ( pseudo, content) => (
